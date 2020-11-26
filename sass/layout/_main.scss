@@ -1,0 +1,39 @@
+main {
+  background: $color-back;
+}
+
+.container_restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.container_restaurants_card {
+  background-color: $color-white;
+  margin: 12px;
+  border-radius: 12px;
+}
+
+.container_restaurants_card_image {
+  object-fit: contain;
+}
+
+.container_restaurants_card_image img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.container_restaurants_card_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_btn a {
+  text-decoration: none;
+}
+
+.container_restaurants_card_image img {
+  width: 200px;
+  height: 200px;
+}
