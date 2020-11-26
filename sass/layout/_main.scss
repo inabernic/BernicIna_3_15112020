@@ -37,3 +37,15 @@ main {
   width: 200px;
   height: 200px;
 }
+
+
+.card_restaurant{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card_dish{
+  background-color: $color-white;
+  margin: 20px;
+  border-radius: 12px;
+}
