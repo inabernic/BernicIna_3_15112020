@@ -29,15 +29,15 @@ box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
 background-color:  #f1e7f1;
 }
 
-ol {counter-reset: repas;} /* on initialise et nomme un compteur */
-li {
+.section_body ol {counter-reset: repas;} /* on initialise et nomme un compteur */
+.section_body li {
 	list-style-type: none;
 	counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
 	margin-bottom: 13px;
 }
-li:before {
+.section_body li::before {
 	content: counter(repas); /* on affiche le compteur */
-	padding: 0 8px 7px;
+	padding: 4px 10px 7px;
 	vertical-align: baseline;
 	background: $color-primary;
 	-moz-border-radius: 60px;
