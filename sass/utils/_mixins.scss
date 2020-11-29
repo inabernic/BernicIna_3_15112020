@@ -1,10 +1,11 @@
 @mixin aside_btn {
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 100rem;
   background: $color-mix;
   border: none;
   text-align: center;
   justify-content: center;
+  box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
 
   &:hover {
     background: $color-primary;
