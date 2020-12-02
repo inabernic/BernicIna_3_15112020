@@ -39,11 +39,13 @@ color: $color-text-gray;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 form {
     padding: 9px;
     background-color: $color-fond;
+    max-width: 1600px;
     min-width: 375px;
 }
 
@@ -57,4 +59,23 @@ input {
 ::placeholder {
     color: black;
     opacity: 1;
+}
+
+
+//la palette du gout
+
+.container_image img{
+    width: 100%;
+}
+
+.card_restarant_blok{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    color: black;
+    justify-content: space-between;
+}
+
+.card_restarant_blok{
+font-size: 1.5em;
 }

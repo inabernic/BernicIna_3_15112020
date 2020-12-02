@@ -9,10 +9,9 @@ align-self: flex-start;
 .container_restaurants {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  display: inline-block;
   box-sizing: border-box;
+  justify-items: baseline;
+  justify-content: space-between;
 }
 
 .container_restaurants_card {
@@ -21,6 +20,7 @@ align-self: flex-start;
   margin-top: 0;
   border-radius: 12px;
   box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
+  
 }
 
 .container_restaurants_card_image {
@@ -54,8 +54,9 @@ align-self: flex-start;
 }
 
 .card_restaurant{
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -51px;
 }
 
 .card_dish{
