@@ -1,70 +1,85 @@
-.section_body{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-left: 20px;
-	padding-right: 20px;
-	width: 97%;
-}
+section {
 
-section a{
-    color: $color-text;
-    padding-left: 20px;
-font-size: 1rem;
-font-weight: bold;
-}
+	.section_header {
+		align-self: flex-start;
+	}
 
-.section_header{
-align-self: flex-start;
-}
+	.section_body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 97%;
+		margin-top: 0;
+		justify-content: center;
 
-.section_button{
-padding: 29px;
-margin-bottom: 10px;
-border-radius: 24px;
-border: none;
-box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
-}
+		&_restaurants,
+		&_card,
+		&_try-restaurant {
+			justify-items: center;
+		}
 
-.section_button.color{
-background-color:  #f1e7f1;
-}
+		ol {
+			counter-reset: repas;
+		}
 
-.section_body ol {counter-reset: repas;} /* on initialise et nomme un compteur */
-.section_body li {
-	list-style-type: none;
-	counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
-	margin-bottom: 13px;
-}
-.section_body li::before {
-	content: counter(repas); /* on affiche le compteur */
-	padding: 4px 10px 7px;
-	vertical-align: baseline;
-	background: $color-primary;
-	-moz-border-radius: 60px;
-	border-radius: 60px;
-	font-size: 0.9em;
-	color: $color-white;
-	margin-right: -17px;	
-	position: relative;	
-}
+		/* on initialise et nomme un compteur */
+		li {
+			list-style-type: none;
+			counter-increment: repas;
+			/* on incrémente le compteur à chaque nouveau li */
+			margin-bottom: 13px;
+			padding-right: 10px;
+		}
 
-.fa-mobile-alt {
-	font-size: 1.3rem;
-}
+		li::before {
+			content: counter(repas);
+			/* on affiche le compteur */
+			padding: 4px 10px 7px;
+			vertical-align: baseline;
+			background: $color-primary;
+			-moz-border-radius: 60px;
+			border-radius: 60px;
+			font-size: 0.9em;
+			color: $color-white;
+			margin-right: -17px;
+			position: relative;
+		}
+	}
 
-.fa-store{
-	font-size: 1rem;
-}
+	.section_button {
+		padding: 26px;
+		margin-bottom: 10px;
+		border-radius: 24px;
+		border: none;
+		box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
+		color: $color-text;
+		padding-left: 20px;
+		font-size: 1rem;
+		font-weight: bold;
+		width: 297px;
 
-.fa-ellipsis-v,  .fa-bars{
-	font-size: 1rem;
-}
+		.color {
+			background-color: #f1e7f1;
+		}
+	}
 
-.fa-mobile-alt, .fa-ellipsis-v, .fa-bars{
-	color: $color-text-gray;
-}
+	.fa-store {
+		font-size: 1rem;
+		color: $color-primary;
+	}
 
-.fa-store{
-	color: $color-primary;
+	.fa-bars,
+	.fa-mobile-alt,
+	.fa-store {
+		padding-right: 10px;
+	}
+
+	.fa-mobile-alt,
+	.fa-ellipsis-v,
+	.fa-bars {
+		color: $color-text-gray;
+		font-size: 1.2rem;
+	}
 }

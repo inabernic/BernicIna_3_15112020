@@ -1,17 +1,30 @@
 footer {
     background-color: black;
     color: $color-white;
+
+    .footer_title {
+        color: white;
+        font-family: 'Shrikhand', cursive;
+        padding-top: 30px;
+        font-size: 1.1rem;
+        padding-left: 45px;
+    }
 }
 
-#footer {
-   color: white;
-   height: 45px;
-}
-
-.nav__link a {
-    color: $color-white;
-}
-
-ul {
+.nav__link {
+    padding: 7px;
     list-style: none;
+
+    ul {
+        padding-left: 0px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
 }

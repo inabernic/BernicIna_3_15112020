@@ -1,66 +1,80 @@
 main {
   background: $color-back;
-}
 
-#restaurants{
-align-self: flex-start;
-}
+  #restaurants {
+    align-self: flex-start;
+  }
 
-.container_restaurants {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-items: baseline;
-  justify-content: space-between;
-}
+  .container_restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-items: baseline;
+    justify-content: space-between;
 
-.container_restaurants_card {
-  background-color: $color-white;
-  margin: 17px;
-  margin-top: 0;
-  border-radius: 12px;
-  box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
-  
-}
+    &_card {
+      background-color: $color-white;
+      margin: 17px;
+      margin-top: 0;
+      border-radius: 12px;
+      box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
+    }
+  }
 
-.container_restaurants_card_image {
-  object-fit: contain;
-}
 
-.container_restaurants_card_info_text h3,p{
-  margin: 0;
-}
 
-.container_restaurants_card_info_text p{
-  text-align: left;
-}
+  .container_restaurants_card_image {
+    object-fit: contain;
 
-.container_restaurants_card_info {
- justify-content: space-between;
- display: flex;
- padding: 1rem;
- align-items: center;
- color: $color-text;
-}
+    img {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      width: 100%;
+      height: 220px;
+      max-width: 375px;
+      max-height: 220px;
+      display: inline;
+      height: 140px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+  }
 
-.main_btn a {
-  text-decoration: none;
-}
+  .container_restaurants_card_info {
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    color: $color-text;
 
-.container_restaurants_card_image img {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  width: 100%;
-}
+    &_text {
+      p {
+        text-align: left;
+      }
 
-.card_restaurant{
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  margin-top: -51px;
-}
+      h3,
+      p {
+        margin: 0;
+      }
+    }
 
-.card_dish{
-  background-color: $color-white;
-  margin: 20px;
-  border-radius: 12px;
+    .main_btn a {
+      text-decoration: none;
+    }
+
+    .card_restaurant {
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      margin-top: -51px;
+    }
+
+    .card_dish {
+      background-color: $color-white;
+      margin: 20px;
+      border-radius: 12px;
+    }
+
+  }
+
+  //palete du gout
 }

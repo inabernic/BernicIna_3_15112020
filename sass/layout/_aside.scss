@@ -6,76 +6,72 @@ aside {
     padding-top: 0;
     padding-left: 23px;
     padding-right: 22px;
+
+    .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    form {
+        padding: 9px;
+        background-color: $color-fond;
+        max-width: 1600px;
+        min-width: 375px;
+    }
+
+    input {
+        background: transparent;
+        border: none;
+        padding-left: 12px;
+        width: 127px;
+    }
+
+    ::placeholder {
+        color: black;
+        opacity: 1;
+    }
+
+    .aside_title {
+        height: 66px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .aside_btn {
+        margin-top: 25px;
+
+        &_text {
+            color: $color-white;
+            font-size: 0.97rem;
+        }
+    }
+
+    .aside_s_title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.1rem;
+        padding-top: 40px;
+        color: $color-text-gray;
+    }
 }
-
-.aside_title{
-    height: 66px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.aside_btn{
-margin-top: 25px;
-}
-
-.aside_s_title{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-text-align: center;
-font-size: 1.1rem;
-padding-top: 40px;
-color: $color-text-gray;
- }
-
-.aside_btn_text {
-    color: $color-white;
-    font-size: 0.97rem;
-}
-
-.location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-form {
-    padding: 9px;
-    background-color: $color-fond;
-    max-width: 1600px;
-    min-width: 375px;
-}
-
-input {
-    background: transparent;
-    border: none;
-    padding-left: 12px;
-    width: 127px;
-}
-
-::placeholder {
-    color: black;
-    opacity: 1;
-}
-
 
 //la palette du gout
 
-.container_image img{
+.container_image img {
     width: 100%;
 }
 
-.card_restarant_blok{
+.card_restarant_blok {
     display: flex;
     padding: 1rem;
     align-items: center;
     color: black;
     justify-content: space-between;
-}
-
-.card_restarant_blok{
-font-size: 1.5em;
+    font-size: 1.5em;
 }
