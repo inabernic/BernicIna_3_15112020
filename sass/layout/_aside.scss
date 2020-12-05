@@ -4,8 +4,7 @@ aside {
     background: $color-back;
     padding-bottom: 50px;
     padding-top: 0;
-    padding-left: 23px;
-    padding-right: 22px;
+    width: 100%;
 
     .location {
         display: flex;
@@ -15,9 +14,8 @@ aside {
     }
 
     form {
-        padding: 9px;
+        height: 45px;
         background-color: $color-fond;
-        max-width: 1600px;
         min-width: 375px;
     }
 
@@ -43,11 +41,8 @@ aside {
 
     .aside_btn {
         margin-top: 25px;
-
-        &_text {
-            color: $color-white;
-            font-size: 0.97rem;
-        }
+        color: $color-white;
+        font-size: 0.97rem;
     }
 
     .aside_s_title {
