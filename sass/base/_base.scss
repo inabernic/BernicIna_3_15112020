@@ -19,7 +19,10 @@ body {
             flex-direction: column;
             align-items: center;
         }
-
+        main {
+            background: $color-back;
+        }
+        
         a:link {
             text-decoration: none;
             text-align: center;

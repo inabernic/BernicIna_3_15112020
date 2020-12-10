@@ -36,6 +36,7 @@ main {
     }
   }
 
+
   .container_restaurants_card_info {
     justify-content: space-between;
     display: flex;
@@ -43,12 +44,22 @@ main {
     align-items: center;
     color: $color-text;
 
+    i {
+      font-size: 1.8rem;
+    }
+
     &_text {
       p {
         text-align: left;
       }
 
+      h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.7rem;
+      }
+
       h3,
+      h2,
       p {
         margin: 0;
       }
@@ -57,18 +68,69 @@ main {
     .main_btn a {
       text-decoration: none;
     }
-
-    .card_dish {
-      background-color: $color-white;
-      margin: 20px;
-      border-radius: 12px;
-    }
   }
 }
 
-  //palete du gout
-  main.card_restaurant {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    margin-top: -51px;
-  }
+ .far.fa-heart.color{
+        background: linear-gradient(#FF79DA, 47%, #9356DC);
+      }
+
+//palete du gout
+
+
+.card_restaurant {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -51px;
+  position: relative;
+min-width: 375px;
+  max-width: 1400px;
+  
+}
+
+.container_entrees_card p,
+.container_plats_card p,
+.container_desserts_card p {
+  margin: 25px;
+  border-bottom: 0.5px solid green;
+}
+
+.container_card_restaurant {
+  background-color: $color-back;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resto {
+  margin-bottom: 50px;
+  margin-top: 25px;
+  color: $color-white;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+div.card_dish {
+  display: flex;
+  background-color: $color-white;
+  margin: 20px;
+  border-radius: 12px;
+  align-self: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.card_dish p {
+  margin: 0px;
+  border: none;
+}
+
+.card_title p,
+h3 {
+  margin: 0;
+}
+
+.container_restaurants_card_info_text h2 {
+  margin: 0;
+  padding: 0;
+}
