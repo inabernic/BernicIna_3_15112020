@@ -5,6 +5,7 @@ main {
     align-self: flex-start;
   }
 
+
   .container_restaurants {
     display: flex;
     flex-wrap: wrap;
@@ -18,26 +19,84 @@ main {
       margin-top: 0;
       border-radius: 12px;
       box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
+      position: relative;
+
+      &_image {
+        overflow: hidden;
+        max-width: 325px;
+        height: 170px;
+
+        img {
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          width: 100%;
+          height: 100%;
+          object-position: bottom;
+          object-fit: cover;
+        }
+      }
+
+      &_new {
+        position: absolute;
+        color: rgb(15, 146, 96);
+        background-color: $color-tertiary;
+        top: 14px;
+        right: 12px;
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      &_info {
+        justify-content: space-between;
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        color: $color-text;
+
+        &_text {
+          h3 {}
+
+          p {
+            text-align: left;
+          }
+        }
+
+        i {
+          font-size: 1.5rem;
+
+        }
+         
+        i:hover{
+          transform: translateX(1);
+          transform: perspective(0);
+          opacity: 0.5;
+         color: linear-gradient(#FF79DA, 47%, #9356DC);
+        }
+      }
     }
   }
 
-  .container_restaurants_card_image {
-    overflow: hidden;
-    max-width: 325px;
-    height: 170px;
-
-    img {
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      width: 100%;
-      height: 100%;
-      object-position: bottom;
-      object-fit: cover;
-    }
+  .main_btn a {
+    text-decoration: none;
   }
+}
 
 
-  .container_restaurants_card_info {
+
+
+
+//palete du gout
+
+.card_restaurant {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -51px;
+  position: relative;
+  min-width: 375px;
+  max-width: 1400px;
+
+  &_info {
     justify-content: space-between;
     display: flex;
     padding: 1rem;
@@ -45,17 +104,34 @@ main {
     color: $color-text;
 
     i {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
 
     &_text {
-      p {
-        text-align: left;
-      }
 
       h2 {
         font-family: 'Shrikhand', cursive;
         font-size: 1.7rem;
+      }
+    }
+  }
+
+  &_container {
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    color: $color-text;
+
+    &_text {
+      justify-content: space-between;
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      color: $color-text;
+
+      p {
+        text-align: left;
       }
 
       h3,
@@ -63,42 +139,67 @@ main {
       p {
         margin: 0;
       }
-    }
 
-    .main_btn a {
-      text-decoration: none;
+      h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.7rem;
+      }
     }
   }
 }
 
- .far.fa-heart.color{
-        background: linear-gradient(#FF79DA, 47%, #9356DC);
-      }
-
-//palete du gout
-
-
-.card_restaurant {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  margin-top: -51px;
-  position: relative;
-min-width: 375px;
-  max-width: 1400px;
-  
-}
-
-.container_entrees_card p,
-.container_plats_card p,
-.container_desserts_card p {
-  margin: 25px;
-  border-bottom: 0.5px solid green;
-}
+// .container_entrees_card p,
+// .container_plats_card p,
+// .container_desserts_card p {
+//   margin: 25px;
+//   border-bottom: 0.5px solid green;
+// }
 
 .container_card_restaurant {
   background-color: $color-back;
   display: flex;
   flex-wrap: wrap;
+
+  &_entrees span,
+  &_plats span,
+  &_desserts span {
+    border-bottom: 2px solid black;
+    width: 40px;
+    display: block;
+    margin-left: 25px;
+  }
+
+  h3 {
+    margin-left: 25px;
+  }
+}
+
+.card {
+
+  &_dish {
+    display: flex;
+    background-color: $color-white;
+    margin: 20px;
+    border-radius: 12px;
+    align-self: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+
+    &_title {
+
+      p,
+      h4 {
+        margin: 0;
+      }
+    }
+
+    p {
+      margin: 0px;
+      border: none;
+    }
+  }
 }
 
 .resto {
@@ -109,28 +210,21 @@ min-width: 375px;
   font-size: 1rem;
 }
 
-div.card_dish {
-  display: flex;
-  background-color: $color-white;
-  margin: 20px;
-  border-radius: 12px;
-  align-self: center;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 15px;
+.card_dish:hover>.card_dish_price {
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation-name: fadeinleft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-.card_dish p {
-  margin: 0px;
-  border: none;
-}
+
 
 .card_title p,
 h3 {
   margin: 0;
 }
 
-.container_restaurants_card_info_text h2 {
+.container_restaurants_card_info_text h3, p {
   margin: 0;
   padding: 0;
 }

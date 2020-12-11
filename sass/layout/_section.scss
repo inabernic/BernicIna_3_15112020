@@ -65,9 +65,13 @@ section {
 		}
 	}
 
+
 	.fa-store {
 		font-size: 1rem;
-		color: $color-primary;
+	}
+
+	.fa-store,.fa-ellipsis-v,.fa-bars,.fa-mobile-alt:hover{
+	color: $color-primary;
 	}
 
 	.fa-bars,
@@ -82,4 +86,12 @@ section {
 		color: $color-text-gray;
 		font-size: 1.2rem;
 	}
+}
+
+.section_button:hover{
+	// transform: translateX(1);
+	// transform: perspective(0);
+	// opacity: 0.5;
+	background-color: rgb(231, 203, 228);
+
 }

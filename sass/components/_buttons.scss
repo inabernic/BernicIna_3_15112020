@@ -1,3 +1,31 @@
 .aside_btn {
     @include aside_btn
 }
+
+// .btn_actif {
+//     &:active {
+//         & + .progress {
+//             & > .progress__bar {
+//                 transform: scaleX(1);
+//             }
+//         }
+//     }
+// }
+// .progress {
+//     &__bar {
+//         transform-origin: 0% 50%;
+//         transform: scaleX(0);
+//         transition: transform 1000ms cubic-bezier(.32,0,.07,1);
+//     }
+// }
+
+@keyframes fadeinleft {
+0% {
+    opacity: 0;
+    transform: translateX(0);
+}
+100% {
+    opacity: 1;
+    transform: translateX(-10vw);
+}
+}
