@@ -64,18 +64,16 @@ main {
 
         i {
           font-size: 1.5rem;
-
         }
          
-        i:hover{
-          transform: translateX(1);
-          transform: perspective(0);
-          opacity: 0.5;
-         color: linear-gradient(#FF79DA, 47%, #9356DC);
-        }
+       
       }
     }
   }
+
+  .container_restaurants_card_info i:hover{
+   background-color: linear-gradient(#FF79DA, 47%, #9356DC);
+     }
 
   .main_btn a {
     text-decoration: none;
@@ -112,6 +110,7 @@ main {
       h2 {
         font-family: 'Shrikhand', cursive;
         font-size: 1.7rem;
+        margin: 0;
       }
     }
   }
@@ -148,13 +147,6 @@ main {
   }
 }
 
-// .container_entrees_card p,
-// .container_plats_card p,
-// .container_desserts_card p {
-//   margin: 25px;
-//   border-bottom: 0.5px solid green;
-// }
-
 .container_card_restaurant {
   background-color: $color-back;
   display: flex;
@@ -187,17 +179,9 @@ main {
     padding: 15px;
     position: relative;
 
-    &_title {
-
-      p,
-      h4 {
-        margin: 0;
-      }
-    }
-
-    p {
-      margin: 0px;
-      border: none;
+    p,
+    h4 {
+      margin: 5px;
     }
   }
 }
@@ -210,12 +194,18 @@ main {
   font-size: 1rem;
 }
 
+.container_restaurant_card_image:hover>.container_restaurants_card_info i{
+  animation-name: coloranim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 .card_dish:hover>.card_dish_price {
   // animation: name duration timing-function delay iteration-count direction fill-mode;
   animation-name: fadeinleft;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+
 
 
 
