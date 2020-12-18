@@ -68,9 +68,9 @@ main {
     }
   }
 
-  .container_restaurants_card_info i:hover{
+ /*  .container_restaurants_card_info i:hover{
    background-color: linear-gradient(#FF79DA, 47%, #9356DC);
-     }
+     } */
 
   .main_btn a {
     text-decoration: none;
@@ -202,11 +202,20 @@ main {
   font-size: 1rem;
 }
 
-.container_restaurant_card_image:hover>.container_restaurants_card_info i{
+.container_restaurants_card:hover {
+  //animation: coloranim 5s infinite;
   animation-name: coloranim;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  opacity: 1;
 }
+
+.container_restaurants_card_info i:hover{
+  animation: colorheart ;
+  animation-duration: 6s;
+    }
+
+
+
 .card_dish:hover>.card_dish_price {
   // animation: name duration timing-function delay iteration-count direction fill-mode;
   animation-name: fadeinleft;

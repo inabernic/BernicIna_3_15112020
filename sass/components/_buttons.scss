@@ -20,18 +20,34 @@
 // }
 
 @keyframes fadeinleft {
-0% {
-    opacity: 0;
-    transform: translateX(0);
-}
-100% {
-    opacity: 1;
-    transform: translateX(-2vw);
-}
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-2vw);
+    }
 }
 
-@keyframes coloranim{
-    0%{background-color:#e21d17}
-    17%{background-color:#116ba9}
-    34%{background-color:#ea670c}
+@keyframes coloranim {
+    0% {
+        opacity: 0.5;
+    }
+/* 
+    100%{
+        opacity: 1;
+    } */
 }
+
+@keyframes colorheart{
+   // background-color: linear-gradient(#FF79DA, 47%, #9356DC);
+   0% {
+       opacity:1;
+    background: linear-gradient(#FF79DA, 47%, #9356DC);
+  }
+  100% {
+    background: linear-gradient(#FF79DA, 47%, #9356DC);
+  }
+    }
