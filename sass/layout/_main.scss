@@ -152,6 +152,12 @@ main {
   display: flex;
   flex-wrap: wrap;
 
+  &_entrees,
+  &_plats,
+  &_desserts {
+  width: 100%;
+  }
+  
   &_entrees span,
   &_plats span,
   &_desserts span {
