@@ -55,7 +55,6 @@ main {
         color: $color-text;
 
         &_text {
-          h3 {}
 
           p {
             text-align: left;
@@ -65,8 +64,6 @@ main {
         i {
           font-size: 1.5rem;
         }
-         
-       
       }
     }
   }
@@ -185,6 +182,10 @@ main {
     align-items: flex-end;
     padding: 15px;
     position: relative;
+
+    p{
+      font-size: 0.81rem;
+    }
 
     p,
     h4 {
