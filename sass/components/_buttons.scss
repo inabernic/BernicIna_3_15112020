@@ -26,11 +26,11 @@
 }
 100% {
     opacity: 1;
-    transform: translateX(-4vw);
+    transform: translateX(-2vw);
 }
 }
 
-@-webkit-keyframes coloranim{
+@keyframes coloranim{
     0%{background-color:#e21d17}
     17%{background-color:#116ba9}
     34%{background-color:#ea670c}

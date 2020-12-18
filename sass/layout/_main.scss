@@ -155,13 +155,13 @@ main {
   &_entrees,
   &_plats,
   &_desserts {
-  width: 100%;
-  }
+  width: 360px;
+  } 
   
   &_entrees span,
   &_plats span,
   &_desserts span {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $color-tertiary;
     width: 40px;
     display: block;
     margin-left: 25px;
