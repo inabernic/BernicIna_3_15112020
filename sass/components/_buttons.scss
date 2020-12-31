@@ -2,23 +2,6 @@
     @include aside_btn
 }
 
-// .btn_actif {
-//     &:active {
-//         & + .progress {
-//             & > .progress__bar {
-//                 transform: scaleX(1);
-//             }
-//         }
-//     }
-// }
-// .progress {
-//     &__bar {
-//         transform-origin: 0% 50%;
-//         transform: scaleX(0);
-//         transition: transform 1000ms cubic-bezier(.32,0,.07,1);
-//     }
-// }
-
 @keyframes fadeinleft {
     0% {
         opacity: 0;
@@ -27,7 +10,7 @@
 
     100% {
         opacity: 1;
-        transform: translateX(-2vw);
+        transform: translateX(-1.5vw);
     }
 }
 
@@ -35,19 +18,4 @@
     0% {
         opacity: 0.5;
     }
-/* 
-    100%{
-        opacity: 1;
-    } */
 }
-
-@keyframes colorheart{
-   // background-color: linear-gradient(#FF79DA, 47%, #9356DC);
-   0% {
-       opacity:1;
-    background: linear-gradient(#FF79DA, 47%, #9356DC);
-  }
-  100% {
-    background: linear-gradient(#FF79DA, 47%, #9356DC);
-  }
-    }

@@ -12,6 +12,7 @@ main {
     box-sizing: border-box;
     justify-items: baseline;
     justify-content: center;
+    width: 100%;
 
     &_card {
       background-color: $color-white;
@@ -20,6 +21,7 @@ main {
       border-radius: 12px;
       box-shadow: 0.1px 5px 10px rgb(207, 207, 207);
       position: relative;
+      max-width: 314px;
 
       &_image {
         overflow: hidden;
@@ -54,6 +56,12 @@ main {
         align-items: center;
         color: $color-text;
 
+        .fas.fa-heart {
+          // color: -webkit-gradient(linear, #FF79DA, #9356DC);
+          color: $color-primary;
+          display: none;
+        }
+
         &_text {
 
           p {
@@ -68,20 +76,33 @@ main {
     }
   }
 
- /*  .container_restaurants_card_info i:hover{
-   background-color: linear-gradient(#FF79DA, 47%, #9356DC);
-     } */
-
   .main_btn a {
     text-decoration: none;
+  }
+}
+
+.container_restaurants_card:hover {
+  //animation: coloranim 5s infinite;
+  animation-name: coloranim;
+  animation-duration: 2s;
+  opacity: 1;
+
+  i.far.fa-heart {
+    display: none;
+  }
+
+  i.fas.fa-heart {
+    display: flex;
   }
 }
 
 
 
 
-
 //palete du gout
+.fa-arrow-left {
+  color: black;
+}
 
 .card_restaurant {
   border-top-left-radius: 50px;
@@ -102,8 +123,8 @@ main {
       font-size: 1.5rem;
     }
 
-    &_text {
 
+    &_text {
       h2 {
         font-family: 'Shrikhand', cursive;
         font-size: 1.7rem;
@@ -140,6 +161,7 @@ main {
         font-family: 'Shrikhand', cursive;
         font-size: 1.7rem;
       }
+
     }
   }
 }
@@ -152,9 +174,9 @@ main {
   &_entrees,
   &_plats,
   &_desserts {
-  width: 360px;
-  } 
-  
+    width: 360px;
+  }
+
   &_entrees span,
   &_plats span,
   &_desserts span {
@@ -171,7 +193,6 @@ main {
 }
 
 .card {
-
   &_dish {
     display: flex;
     background-color: $color-white;
@@ -180,40 +201,60 @@ main {
     align-self: center;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 15px;
     position: relative;
 
-    p{
-      font-size: 0.81rem;
+    h4.card_dish_title {
+      padding-top: 10px;
+    }
+
+    p.card_dish_price {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      padding-bottom: 10px;
+      padding-right: 15px;
+    }
+
+    h4 {
+      padding-bottom: 10px;
+      padding-right: 10px;
     }
 
     p,
     h4 {
-      margin: 5px;
+      margin: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .btn_patrat {
+    display: none;
+    align-self: center;
+    background: $color-tertiary;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    margin: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    .fas.fa-check-circle {
+      color: white;
+      //color: $color-tertiary;
+      background-color: transparent;
+      font-size: 1.5rem;
+
+      &:hover {
+        transform: scale(1.2);
+        background-color: transparent;
+      }
     }
   }
 }
-
-.resto {
-  margin-bottom: 50px;
-  margin-top: 25px;
-  color: $color-white;
-  width: 10rem;
-  font-size: 1rem;
-}
-
-.container_restaurants_card:hover {
-  //animation: coloranim 5s infinite;
-  animation-name: coloranim;
-  animation-duration: 2s;
-  opacity: 1;
-}
-
-.container_restaurants_card_info i:hover{
-  animation: colorheart ;
-  animation-duration: 6s;
-    }
-
 
 
 .card_dish:hover>.card_dish_price {
@@ -223,15 +264,31 @@ main {
   animation-fill-mode: forwards;
 }
 
+.card_dish:hover {
+  .btn_patrat {
+    display: flex;
+    color: $color-tertiary;
+  }
+}
 
 
+.resto {
+  margin-bottom: 50px;
+  margin-top: 25px;
+  color: $color-white;
+  width: 10rem;
+  font-size: 1rem;
+}
 
 .card_title p,
 h3 {
   margin: 0;
 }
 
-.container_restaurants_card_info_text h3, p {
+.container_restaurants_card_info_text h3,
+p {
   margin: 0;
   padding: 0;
 }
+
+//spiner
