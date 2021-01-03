@@ -56,9 +56,9 @@ main {
         color: $color-text;
 
         .fas.fa-heart {
-        	background: $color-mix-top-right;
-	        -webkit-background-clip: text;
-	        -webkit-text-fill-color: transparent;
+          background: $color-mix-top-right;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
           display: none;
         }
 
@@ -91,14 +91,14 @@ main {
 
   i.fas.fa-heart {
     display: flex;
-}
+  }
 
-a:active {
-  .lds-roller{
-    display: block;
+  a:active {
+    .lds-roller {
+      display: block;
+    }
   }
 }
-
 
 //palete du gout
 .fa-arrow-left {
@@ -204,6 +204,7 @@ a:active {
 
     &_box {
       overflow: hidden;
+
       p,
       h4 {
         overflow: hidden;
@@ -276,7 +277,7 @@ a:active {
     color: $color-tertiary;
     animation-name: aparence;
     animation-duration: 2s;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -298,4 +299,3 @@ p {
   margin: 0;
   padding: 0;
 }
-
