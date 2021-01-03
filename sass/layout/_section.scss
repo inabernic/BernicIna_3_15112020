@@ -1,5 +1,4 @@
 section {
-
 	.section_header {
 		align-self: flex-start;
 	}
@@ -84,13 +83,10 @@ section {
 	}
 }
 
-.section_button:hover{
-	// transform: translateX(1);
-	// transform: perspective(0);
-	// opacity: 0.5;
+.section_button:hover {
 	background-color: rgb(231, 203, 228);
 
-	.fas{
+	.fas {
 		color: $color-primary;
-}
+	}
 }
