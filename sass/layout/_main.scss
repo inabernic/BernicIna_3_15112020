@@ -169,6 +169,8 @@ main {
   background-color: rgb(243, 238, 238);
   display: flex;
   flex-wrap: wrap;
+  animation-duration: 3s;
+  animation-name: slidein;
 
   &_entrees,
   &_plats,
@@ -189,6 +191,20 @@ main {
     margin-left: 25px;
     text-transform: uppercase;
   }
+}
+.container_card_restaurant_entrees{
+  animation-duration: 1s;
+  animation-name: slidein1;
+}
+
+.container_card_restaurant_plats{
+  animation-duration: 3s;
+  animation-name: slidein2;
+}
+
+.container_card_restaurant_desserts{
+  animation-duration: 5s;
+  animation-name: slidein3;
 }
 
 .card {

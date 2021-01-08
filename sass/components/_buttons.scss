@@ -31,3 +31,19 @@
         opacity: 0.5;
     }
 }
+
+@keyframes slidein1 {
+    0%   { margin-left: -70px;opacity:0; }
+   100% { margin-left: 0;opacity:1; }
+  }
+  @keyframes slidein2 {
+    0%   { margin-left: -50px;opacity:0; }
+    50% {margin-left: -50px;opacity:0;}
+   100% { margin-left: 0;opacity:1; }
+  }
+  @keyframes slidein3 {
+    0%   { margin-left: -20px;opacity:0; }
+    50% {margin-left: -20px;opacity:0;}
+    70% {margin-left: -20px;opacity:0;}
+   100% { margin-left: 0;opacity:1; }
+  }
