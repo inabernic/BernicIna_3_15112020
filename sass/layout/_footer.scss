@@ -17,14 +17,27 @@ footer {
 
     ul {
         padding-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 97%;
     }
 
     li {
         list-style: none;
+        width: 100%;
     }
 
     a {
         color: white;
         text-decoration: none;
     }
+}
+
+.block_li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 60%;
+    cursor: pointer;
 }
