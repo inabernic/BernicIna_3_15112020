@@ -28,12 +28,16 @@ main {
         height: 170px;
 
         img {
+          display: block;
           border-top-left-radius: 12px;
           border-top-right-radius: 12px;
-          width: 100%;
           height: 100%;
           object-position: bottom;
           object-fit: cover;
+        }
+        .vertical_image {
+          width: 255px;
+          display: block;
         }
       }
 
@@ -218,6 +222,7 @@ main {
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    overflow: hidden;
 
     &_box {
       overflow: hidden;
@@ -270,6 +275,8 @@ main {
   margin: 0;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  transform-origin: left;
+  transform: translate(100%, 0px);
 
   .fas.fa-check-circle {
     color: white;
@@ -284,18 +291,21 @@ main {
 }
 
 .card_dish:hover>.card_dish_price {
+  display: inline-block;
   animation-name: fadeinleft;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  white-space: nowrap;
 }
 
 .card_dish:hover {
   .btn_patrat {
-    display: flex;
+    display: block;
     color: $color-tertiary;
-    animation-name: aparence;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-name: moveleft1;
+    animation-timing-function: linear;
   }
 }
 
@@ -305,6 +315,11 @@ main {
   color: white;
   width: 10rem;
   font-size: 1rem;
+}
+
+.resto:hover {
+  animation-name: coloranim;
+  animation-duration: 15s;
 }
 
 .card_title p,

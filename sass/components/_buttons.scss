@@ -13,7 +13,6 @@
 
     }
 }
-
 @keyframes aparence {
     0% {
         opacity: 0;
@@ -34,51 +33,56 @@
 
 @keyframes slidein1 {
     0% {
-        margin-left: -70px;
+        margin-top: -70px;
         opacity: 0;
+
     }
 
     100% {
-        margin-left: 0;
+        margin-top: 0;
         opacity: 1;
     }
 }
 
 @keyframes slidein2 {
     0% {
-        margin-left: -50px;
+        margin-top: -70px;
         opacity: 0;
     }
 
     50% {
-        margin-left: -50px;
+        margin-top: -20px;
         opacity: 0;
     }
 
     100% {
-        margin-left: 0;
+        margin-top: 0;
         opacity: 1;
     }
 }
 
 @keyframes slidein3 {
     0% {
-        margin-left: -20px;
+        margin-top: -70px;
         opacity: 0;
     }
 
     50% {
-        margin-left: -20px;
-        opacity: 0;
-    }
-
-    70% {
-        margin-left: -20px;
+        margin-top: -20px;
         opacity: 0;
     }
 
     100% {
-        margin-left: 0;
+        margin-top: 0;
         opacity: 1;
+    }
+}
+
+
+
+@keyframes moveleft1 {
+    100% {
+        transform: translate3d(0,0,0);
+        
     }
 }

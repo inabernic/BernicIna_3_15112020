@@ -1,4 +1,5 @@
 body {
+    //overflow:hidden;
     box-sizing: border-box;
     max-width: 1400px;
     margin: 0 auto;
@@ -39,8 +40,37 @@ body {
     }
 }
 
+
+/* 
+body browser {
+    margin-right: -14px ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+.overflow-x-scroll-no-scrollbar {overflow:hidden;}
+body::-webkit-scrollbar { 
+    display: none;
+}
+
 .body_out_footer {
     animation-name: aparence;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+
+    margin-right: -14px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+html {overflow: -moz-scrollbars-none;}
+
+html::-webkit-scrollbar { display: none; } 
+
+body ::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent; 
+}
+*/
